@@ -14,10 +14,10 @@ body{
     width: 100%;
     margin: 80px auto;
     display: flex;
+    padding: 20px 0 0 50px;
 }
-.left{
+.left{  
     width: 50%;
-    padding: 80px 0 80px 10%;
 }
 .left h1{
     font-size: 40px;
@@ -123,6 +123,7 @@ body{
 @media (max-width: 864px){
     .container{
         margin: 10px auto;
+        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -132,19 +133,30 @@ body{
         width: 100%;
         text-align: center;
     }
-    .try{
+    .right{
         width: 100%;
+    }
+    .try{
+        width: 50%;
         margin-top: 20px;
     }
     .register{
-        width: 100%;
+        width: 50%;
     }
 }
 @media (max-width: 692px){
+    .left{
+        text-align: center;
+        padding: 0;
+        margin-top: 50px;
+    }
     .try{
-        background-color: royalblue;
+        width: 60%;
         display: flex;
         flex-direction: column;
+    }
+    .register{
+        width: 60%;
     }
     .register p{
         display: flex;
@@ -157,7 +169,16 @@ body{
         font-size: 25px;
     }
     .left p{
+        display: none;
+    }
+    .left p{
         font-size: 12px;
         text-justify: auto;
+    }
+    .try{
+        width: 80%;
+    }
+    .register{
+        width: 80%;
     }
 }
